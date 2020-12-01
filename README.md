@@ -11,6 +11,7 @@ TOKEN_V1 = YOUR_TOKEN_DATA
 2 Clone the repository and run commands:
 ```
 cd docker-runner
+docker login registry.gitlab.com/green-api/docker
 docker-compose build --pull
 docker-compose up --force-recreate
 ```
