@@ -14,8 +14,6 @@ services:
     restart: unless-stopped
     build:
       context: simple-reg-bot/
-    ports:
-      - "8001:8001"
     volumes:
        - ~/simple-reg-bot/credentials:/usr/src/app/credentials
     networks:
