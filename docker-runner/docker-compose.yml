@@ -1,0 +1,22 @@
+
+version: "3.7"
+
+networks:
+  green-api-bots:
+    driver: bridge                       
+    driver_opts:                         
+      com.docker.network.driver.mtu: 1500
+
+services:
+
+  simple-reg-bot:
+    hostname: simple-reg-bot
+    restart: unless-stopped
+    build:
+      context: simple-reg-bot/
+    ports:
+      - "8001:8001"
+    volumes:
+       - ~/simple-reg-bot/credentials:/usr/src/app/credentials
+    networks:
+      - "green-api-bots"

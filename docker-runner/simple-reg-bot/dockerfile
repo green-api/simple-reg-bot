@@ -1,0 +1,1 @@
+FROM registry.gitlab.com/green-api/docker/simple-reg-bot:latest

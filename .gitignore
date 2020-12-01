@@ -1,0 +1,8 @@
+.vscode/
+node_modules
+lib
+out
+.*
+!/.gitignore
+env
+credentials/credentials
