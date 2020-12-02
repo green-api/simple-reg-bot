@@ -4,7 +4,7 @@ A sample chat bot in container that collects basic info (name, birth year etc) a
 
 ## How to run in docker
 
-1 Aquire token on [green-api.com](https://green-api.com/) and create folder ``~/.green-api-admin`` and put file called ``credentials`` inside with the next content: 
+1 Aquire token on [green-api.com](https://green-api.com/) and create folder ``~/simple-reg-bot`` and put file called ``credentials`` inside with the next content: 
 ```
 TOKEN_V1 = YOUR_TOKEN_DATA
 ```
