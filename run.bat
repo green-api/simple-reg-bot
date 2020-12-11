@@ -1,0 +1,1 @@
+docker run  --name simple-reg-bot registry.gitlab.com/green-api/docker/simple-reg-bot:1.0.1

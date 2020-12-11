@@ -10,10 +10,8 @@ TOKEN_V1 = YOUR_TOKEN_DATA
 ```
 2 Clone the repository and run commands:
 ```
-cd docker-runner
-sudo docker login registry.gitlab.com/green-api/docker
-sudo docker-compose build --pull
-sudo docker-compose up --force-recreate
+docker build . -t registry.gitlab.com/green-api/docker/simple-reg-bot --no-cache
+docker run  --name simple-reg-bot registry.gitlab.com/green-api/docker/simple-reg-bot:1.0.1
 ```
 
 ## Third-party libraries
