@@ -12,9 +12,8 @@ services:
   simple-reg-bot:
     hostname: simple-reg-bot
     restart: unless-stopped
-    build:
-      context: simple-reg-bot/
+    image: ripreal/simple-reg-bot:latest
     volumes:
-       - ~/simple-reg-bot/credentials:/usr/src/app/credentials
+       - ./credentials:/usr/src/app/credentials
     networks:
       - "green-api-bots"

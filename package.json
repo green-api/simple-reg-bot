@@ -9,7 +9,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@green-api/whatsapp-bot": "^0.2.4",
+    "@green-api/whatsapp-bot": "^0.2.5",
     "dotenv": "8.2.0"
   },
   "devDependencies": {

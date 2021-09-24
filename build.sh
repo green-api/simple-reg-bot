@@ -1,1 +1,1 @@
-docker build . -t registry.gitlab.com/green-api/docker/simple-reg-bot --no-cache
+docker build . -t ripreal/simple-reg-bot --no-cache

@@ -6,7 +6,10 @@ config({
   path: "credentials/credentials"
 })
 
-const bot = new WhatsAppBot(process.env.TOKEN_V1 || '', {apiType: GreenApiV1})
+const bot = new WhatsAppBot({
+  idInstance: process.env.ID_INSTANCE || '',
+  apiTokenInstance: process.env.API_TOKEN_INSTANCE || ''
+})
 
 const getName = new Scene('getName')
 const getYear = new Scene('getYear')
@@ -175,7 +178,6 @@ check.hears(['2', '2. Back'], async (ctx : any) => {
 check.hears(['3', '3. Delete all', '/start'], async (ctx : any) => {
   ctx.reply('Lets start from beginning. Write your first and last name')
   await ctx.scene.leave('getNumber')
-  ctx.scene.enter('getCompSkills')
   ctx.session = null
 })
 
